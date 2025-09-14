@@ -1,7 +1,7 @@
 # arXiv Research Agent
 
 ## Project Overview
-The **arXiv Research Agent** is a minimal viable product (MVP) designed to enable users to search and query arXiv papers using AI. The focus is on providing accurate and user-friendly access to recent AI papers, leveraging hybrid search techniques and Retrieval-Augmented Generation (RAG) for answering questions.
+The **arXiv Research Agent** is designed to enable users to search and query arXiv papers using AI. The focus is on providing accurate and user-friendly access to recent AI papers, leveraging hybrid search techniques and Retrieval-Augmented Generation (RAG) for answering questions.
 
 ### Core Features
 - **Ingestion**: Fetch papers via the arXiv API, download PDFs, and extract text.
@@ -24,7 +24,7 @@ Ensure the following are installed on your system:
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/niravShenoy/arxiv-research-agent.git
    cd arxiv-research-agent
    ```
 
@@ -41,9 +41,9 @@ Ensure the following are installed on your system:
 3. **Install Python Dependencies**:
    - Create a virtual environment and install dependencies:
      ```bash
-     python -m venv venv
-     source venv/bin/activate  # On Windows: venv\Scripts\activate
-     pip install -r requirements.txt
+     uv venv --python=python3.10
+     source venv/bin/activate  # On Windows: .venv\Scripts\activate
+     uv pip install -r requirements.txt
      ```
 
 4. **Run the Application**:
